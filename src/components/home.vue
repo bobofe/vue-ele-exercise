@@ -2,7 +2,7 @@
 <template>
   <div>
     <v-header></v-header>
-    <div class="tab-bar">
+    <div class="tab-bar border-1px">
       <div class="tab-item">
         <router-link :to="{name:'goods'}">商品</router-link>
       </div>
@@ -45,15 +45,14 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-$my-var = red
 .tab-bar
   display flex
   height 40px
   line-height 40px
   font-size 14px
-  border-bottom 1px solid rgba(7, 17, 27, 0.1)
+  border-1px(rgba(7,17,27,0.1))
   .tab-item
     flex-grow 1
     .router-link-active
-      color $my-var
+      color red
 </style>
